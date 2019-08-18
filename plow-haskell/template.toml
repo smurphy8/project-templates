@@ -1,0 +1,21 @@
+license = "BSD-3-CLAUSE"
+with_readme = true
+
+[files]
+directories = ["src","test","bench","app"]
+templates = [ "{{ project }}.cabal"
+            , "CHANGELOG.md"
+            , ".gitattributes"
+            , ".gitignore"
+            , ".hlint.yaml"
+            , ".hspec"
+            , "LICENSE"
+            , "Setup.hs"
+            , "src/Lib.hs"
+            , "app/Main.hs"
+            , "test/Spec.hs"
+            ]
+
+[config]
+version = "0.1.0.0"
+version_control = "git"
