@@ -4,7 +4,7 @@ version:             {{ version }}
 -- synopsis:
 -- description:
 homepage:            https://github.com/{{ github_username  }}/{{  project  }}#readme
-license:             {{  license  }}
+license:             NONE
 license-file:        LICENSE
 author:              {{ name }}
 maintainer:          {{ email }}
