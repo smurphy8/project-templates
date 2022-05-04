@@ -18,13 +18,12 @@ extra-source-files:  stack.yaml
 
 common deps
        
-  if impl(ghc >= 8.0)
-    ghc-options:       -Wincomplete-uni-patterns -Wincomplete-record-updates -Wredundant-constraints -Widentities
-  if impl(ghc >= 8.4)
-    ghc-options:       -Wmissing-export-lists
+
+  ghc-options:         -Wincomplete-uni-patterns -Wincomplete-record-updates -Wredundant-constraints -Widentities
+  ghc-options:         -Wmissing-export-lists
   ghc-options:         -threaded -rtsopts -with-rtsopts=-N -O3 -Wall -Werror
   build-depends:       base >= 4.3 && < 5
-
+                      
 
 library
   import:              deps
